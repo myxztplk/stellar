@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="service.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="img/steller.png" alt="" /></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="prices">Prices</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="ctn">Get started</a></li>
+      </ul>
+      <img src="img/pngegg.png" alt="" class="menu-btn" />
+    </nav>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const links = document.querySelector(".links");
+
+      menuBtn.addEventListener("click", () => {
+        links.classList.toggle("mobile-menu");
+      });
+    </script>
+  </header>
+  <body>
+    <!-- Services -->
+    <div class="container">
+      <div class="service-wrapper">
+        <div class="service">
+          <h1>Our Services <span></span></h1>
+          <div class="cards">
+            <div class="card">
+              <img src="img/bullhorn.png" alt="" />
+              <h2>Digital Marketing</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem molestias beatae labore a, quo possimus, similique
+                quisquam voluptatibus rerum corporis voluptate esse perferendis!
+                Laudantium eum vel officiis aliquam nam dolorem?
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/creative.png" alt="" />
+              <h2>Content reation</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem molestias beatae labore a, quo possimus, similique
+                quisquam voluptatibus rerum corporis voluptate esse perferendis!
+                Laudantium eum vel officiis aliquam nam dolorem?
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/brand-asset-management.png" alt="" />
+              <h2>Brand Development</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem molestias beatae labore a, quo possimus, similique
+                quisquam voluptatibus rerum corporis voluptate esse perferendis!
+                Laudantium eum vel officiis aliquam nam dolorem?
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/ppc.png" alt="" />
+              <h2>PPC Optimization</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem molestias beatae labore a, quo possimus, similique
+                quisquam voluptatibus rerum corporis voluptate esse perferendis!
+                Laudantium eum vel officiis aliquam nam dolorem?
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/seo.png" alt="" />
+              <h2>SEO Optimization</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem molestias beatae labore a, quo possimus, similique
+                quisquam voluptatibus rerum corporis voluptate esse perferendis!
+                Laudantium eum vel officiis aliquam nam dolorem?
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/sm.png" alt="" />
+              <h2>Social Media Management</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem molestias beatae labore a, quo possimus, similique
+                quisquam voluptatibus rerum corporis voluptate esse perferendis!
+                Laudantium eum vel officiis aliquam nam dolorem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <!-- OUR TEAM -->
+
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-x"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="hero">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="prices">Prices</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy; 2024 Designed by
+          <span class="designer">JN</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

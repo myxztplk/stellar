@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="#">Stellerway</a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="prices">Prices</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="ctn">Get started</a></li>
+      </ul>
+      <img src="img/pngegg.png" alt="" class="menu-btn" />
+    </nav>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const links = document.querySelector(".links");
+
+      menuBtn.addEventListener("click", () => {
+        links.classList.toggle("mobile-menu");
+      });
+    </script>
+  </header>
+
+  <body>
+    <section class="contact-section">
+      <div class="contact-bg">
+        <h3>Get in Touch with Us</h3>
+        <h2>Contact Us</h2>
+        <div class="line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error
+          sunt voluptas corporis, tenetur animi esse mollitia provident,
+          tempore, vitae nam ut aperiam odio? Recusandae explicabo sit sed quos
+          unde.
+        </p>
+      </div>
+
+      <div class="contact-body">
+        <div class="contact-info">
+          <div>
+            <span><i class="fas fa-mobile-alt"></i></span>
+            <span>Phone No:</span>
+            <spsan class="text">(234) 567-8910 </spsan>
+          </div>
+          <div>
+            <span><i class="fas fa-envelope"></i></span>
+            <span> E-mail:</span>
+            <spsan class="text">info@stellarwaymarketing.com </spsan>
+          </div>
+          <div>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span> Address:</span>
+            <spsan class="text"
+              >22334, 4th Street, Sugarland TX, United States
+            </spsan>
+          </div>
+          <div>
+            <span><i class="fas fa-clock"></i></span>
+            <span> Open Hours:</span>
+            <spsan class="text">(234) 567-8910 </spsan>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+              />
+              <input type="text" class="form-control" placeholder="Last Name" />
+              <input type="E-mail" class="form-control" placeholder=" E-mail" />
+              <input type="text" class="form-control" placeholder=" Phone" />
+            </div>
+             <textarea rows="6" class="form-control" placeholder=" Message" /></textarea>
+              <input type="submit" class="send-btn" value="send message">
+          </form>
+          <div>
+            <img src="img/cont.png" alt="">
+          </div>
+
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111026.22060542091!2d-95.79519544268477!3d29.58712978530428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640de10e11b70cb%3A0x2779e11b2263d8cc!2sSugar%20Land%2C%20TX%2C%20USA!5e0!3m2!1sen!2sng!4v1705723302353!5m2!1sen!2sng" frameborder="0" width="100%" height="450" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-x"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="prices">Prices</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy; 2024 Designed by
+          <span class="designer">Stellerway</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
